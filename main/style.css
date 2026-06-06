@@ -7,11 +7,13 @@
     font-display: swap;
 }
 
+
 * { /**refiere a todo el contenido**/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body{
   background: linear-gradient(90deg, #0c1b33,#447ccf, #0c1b33);
@@ -19,6 +21,7 @@ body{
   padding-bottom: 60px;
   font-weight: 400;
 }
+
 
 header{
   position: sticky;
@@ -40,7 +43,6 @@ header nav a{
   margin: 0 2vw;
   text-decoration: none;
   color: rgb(230, 230, 230);
-  /**text-shadow: 0 1px 2px #dddddd;**/
 }
 header nav a:hover{
   color: #ffffff;
@@ -52,12 +54,13 @@ header nav a:hover{
   background-image: url("../imgFolder/green-background.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   text-shadow: 0 0 4px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px #226;
 }
 .hero h1{
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -82,25 +85,52 @@ header nav a:hover{
   box-shadow: 0 0 15px #337;
   border-radius: 20px;
   text-transform:uppercase;
+  transition: all .3s ease;
 }
-
 .boton-presupuesto:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #559;
 }
 
-.foto-perfil{
-  margin: 5vh;
+.transicion{
+  margin: 5rem 0;
+}
+.transicion img{
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
 }
 
-.foto-perfil img{
-  width: 30vw; /**configuracion temporal**/
-}
-
-.contenido-sobre-nosotros{
+#sobre-nosotros{
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding: 2vh 1vw;
+  align-items: center;
+  border: 1px solid #232b45;
+
+  padding: 6rem 1rem;
+  background-color: #99c5;
+  box-shadow: 0 0 15px #226;
+  gap: 2rem;
 }
+#sobre-nosotros h2{
+  font-size: clamp(2rem, 4.5vh, 3rem);
+  
+}
+.foto-perfil{
+  margin: 2rem;
+}
+.foto-perfil img{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 45%;
+  box-shadow: 0 0 15px #333;
+}
+.contenido-sobre-nosotros{
+  font-size: clamp(1rem, 3vh, 2.5rem);
+  max-width: 800px;
+}
+
 
 footer{
   position: fixed;
@@ -115,7 +145,6 @@ footer{
   justify-content: right;
   z-index: 1000;
 }
-
 footer p{
   padding: 0 2vw;
   color: rgb(230, 230, 230);
