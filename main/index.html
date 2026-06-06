@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="fabricacion e instalacion de portones techos escaleras y otras estructuras metalicas">
   <!--titulo mostrado por google-->
-  <title>Herrería XXXXX |  Herrería para Hogares y Empresas</title>
+  <title>Herrería NOMBRRE |  Herrería para Hogares y Empresas</title>
   <!--vinculos tanto para el icono del buscador como a los archivos que ayudan a organizar la pagina-->
   <link rel="icon" href="../imgFolder/green-background.png">
   <link rel="stylesheet" href="style.css">
@@ -19,11 +19,11 @@
   <!--cabeza de pagina-->
   <header>
     <!--"nav" indica zonas para navegar en la pagina-->
-    <nav>
+    <nav class="navegador">
       <!--"a" indica un hipervinculo de algun tipo y "href indica su direccion"-->
       <a href="#inicio">inicio</a>
-      <a href="#sobre-Nosotros">sobre nosotros</a>
-      <a href="#proyectos-Anteriores">proyectos anteriores</a>
+      <a href="#sobre-nosotros">sobre nosotros</a>
+      <a href="#proyectos-anteriores">proyectos anteriores</a>
       <a href="#contactenos">contactenos</a>
     </nav>
   </header>
@@ -31,9 +31,10 @@
   <main>
     <!--tanto section como div ayudan a organizar la pagina (pero tienen distinto valor semantico) "id" y "class" ayudan a identificar etiquetas (o grupos de etiquetas)-->
     <section id="inicio">
-      <div class="titulo">
+      <!--"hero" es un contenedor que se utiliza para mostrar el contenido mas importante de la pagina-->
+      <div class="hero">
         <!--"h1" se utiliza UNA sola vez por pagina y es el titulo principal-->
-        <h1>HERRERÍA XXXXX</h1>
+        <h1>HERRERÍA NOMBRE</h1>
         <!--"p" indica un parrafo-->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni aperiam nesciunt laborum soluta totam quasi praesentium modi eum facilis, numquam natus in illum rerum delectus nihil maxime quia fugit.</p>
         <a class="boton-presupuesto" href="#contactenos">
@@ -41,10 +42,10 @@
         </a>
       </div>
     </section>
-    <section id="sobre-Nosotros">
+    <section id="sobre-nosotros">
       <div class="fotoPerfil">
         <!--"img" nos permite agregar un archivo de tipo imagen "src" indica su direccion y "alt" es un texto alternativo en caso de que no se cargue la imagen-->
-        <img src="../imgFolder/green-background.png" alt="foto perfil de nosotros">
+        <img src="../imgFolder/green-background.png" alt="foto perfil">
       </div>
       <div class="contenido-sobre-nosotros">
         <!--titulo de tipo 2, se puede usar multiples veces, sirve para organizar el contenido-->
@@ -52,7 +53,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
       </div>
     </section>
-    <section id="proyectos-Anteriores">
+    <section id="proyectos-anteriores">
       <div class="organizador-proyectos-anteriores">
         <div class="cabezal">
           <h2>Proyectos anteriores</h2>
@@ -107,7 +108,7 @@
   </main>
   <!--pie de pagina-->
   <footer>
-    <p>© Herrería XXXXX</p>
+    <p>© Herrería NOMBRE</p>
     <p>Montevideo, Uruguay</p>
   </footer>
 </body>

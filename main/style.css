@@ -1,0 +1,62 @@
+* { /**refiere a todo el contenido**/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Romanica';
+    src: url('../fontsFolder/Romanica.woff2') format('woff2'),
+        url('../fontsFolder/Romanica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+header{
+  height: 5vh;
+  background-color: #232b45;
+}
+
+.navegador{
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  display: flex;
+  align-items: center;   /*centra verticalmente*/
+  justify-content: center; /*centra horizontalmente*/
+  height: 5vh; 
+  font-style: oblique;
+  font-weight: lighter;
+  font-family: 'Romanica', Verdana, Tahoma, sans-serif;
+  text-decoration:double;
+}
+
+header nav a{
+  margin: 0 2vw;
+}
+
+.hero{
+  background-image: url("../imgFolder/green-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: 'Romanica', Verdana, Tahoma, sans-serif;
+  color: black;
+  margin-bottom: 15vh;
+}
+
+.boton-presupuesto{
+  display: inline-block;
+  padding: 10px 20px;
+  box-sizing: border-box 20px 50px;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  border-radius: 5px;
+}
