@@ -49,6 +49,9 @@ header nav a:hover{
   text-shadow: 0 0 2px #dddddd;
 }
 
+section{
+  scroll-margin-top: 80px;
+}
 
 .hero{
   background-image: url("../imgFolder/green-background.png");
@@ -107,7 +110,6 @@ header nav a:hover{
   text-align: center;
   align-items: center;
   border: 1px solid #232b45;
-
   padding: 6rem 1rem;
   background-color: #99c5;
   box-shadow: 0 0 15px #226;
@@ -131,6 +133,26 @@ header nav a:hover{
   max-width: 800px;
 }
 
+#proyectos-anteriores{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #232b45;
+  padding: 6rem 1rem;
+  background-color: #99c5;
+  box-shadow: 0 0 15px #226;
+  gap: 2rem;
+}
+.organizador-proyectos-anteriores h2{
+  font-size: clamp(2rem, 4.5vh, 3rem);
+}
+.sub-cabezal{
+  
+  
+  border: 3px solid #232b45;
+  border-radius: 30px;
+}
 
 footer{
   position: fixed;
