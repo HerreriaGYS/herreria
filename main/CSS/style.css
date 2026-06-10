@@ -1,11 +1,4 @@
-@font-face {  /*el selector @ permite declarar reglas en el css (esta indica un nuevo tipo de fuente)*/
-    font-family: 'Romanica';
-    src: url('../fontsFolder/Romanica.woff2') format('woff2'),
-        url('../fontsFolder/Romanica.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 
 
 * { /*refiere a todo el contenido*/
@@ -17,7 +10,7 @@
 
 body{ /*"nombre" a secas selecciona todas las declaraciones con esta etiqueta*/
   background: linear-gradient(90deg, #0c1b33,#447ccf, #0c1b33); /*fondo (en este caso una gradiente lineal de colores)*/
-  font-family: 'Romanica', Verdana, Tahoma, sans-serif; /*selecciona el texto-fuente (si una falla se usa la siguiente)*/
+  font-family: 'Times New Roman', Times, serif; /*selecciona el texto-fuente (si una falla se usa la siguiente)*/
   padding-bottom: 60px;
   font-weight: 400; /*tamaño de fuente*/
 }
@@ -36,8 +29,8 @@ header{
   box-shadow: 0 5px 10px rgba(0,0,0,0.2); /*aplica sombra a una caja (en este caso el header)*/
 }
 header img{
-  height: 4rem;
-  width: 4rem;
+  height: 3.5rem;
+  width: 3.5rem;
   display: block;
   margin-left: 2rem;
 }
@@ -78,7 +71,7 @@ section{
   color: black;
   margin-bottom: 10vh;
 }
-.hero p{
+.hero h2{
   font-size: clamp(1.5rem, 3vh, 3rem);
   padding: 0 2vw;
   margin-bottom: 10vh;
@@ -172,15 +165,18 @@ footer{
   font-size: clamp(1rem, 2vw, 1.5rem); 
   display: flex;
   align-items: center;   /*centra verticalmente*/
-  justify-content: right;
+  justify-content: space-between;
   z-index: 1000;
 }
 footer img{
-  height: 3rem;
-  width: 3rem;
-  margin-left: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: block;
+  margin-left: 2rem;
 }
 footer p{
+  display: flex;
+  justify-content: center;
   padding: 0 2vw;
   color: rgb(230, 230, 230);
 }
