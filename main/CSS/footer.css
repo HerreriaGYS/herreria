@@ -1,25 +1,33 @@
 footer{
-  position: fixed; /*fija un elemento a una pocision absoluta en la pantalla abajo se declara dicha pocision*/
-  bottom: 0;
-  left: 0;
   width: 100%;
   padding: 10px 0;
-  background-color: #232b45;
+  background-color: var(--Bg-Cuaternary);
   font-size: clamp(1rem, 2vw, 1.5rem); 
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
   display: flex;
   align-items: center;   /*centra verticalmente*/
-  justify-content: space-between;
+  flex-direction: column;
   z-index: 1000;
+  color: var(--FontColor-header-footer);
 }
-footer img{
+footer .foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .foot img{
   height: 3.5rem;
   width: 3.5rem;
   display: block;
+  border-left: 2px;
   margin-left: 2rem;
 }
-footer p{
+footer .foot p{
   display: flex;
   justify-content: center;
   padding: 0 2vw;
-  color: rgb(230, 230, 230);
+}
+footer .informacion-contacto{
+  display: flex;
+  flex-direction: column;
 }

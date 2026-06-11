@@ -1,17 +1,15 @@
 html[data-theme="light"] {
-  --Bg-Main: #fdf6ee;
-  --Bg-Secondary: hsl(29, 44%, 85%);
-  --Bg-Tertiary: #d2b49a;
-  --Bg-Quaternary: #935a36;
-  --Bg-Quintenary: #8b3926;
+  --Bg-Main: #d2b49a;
+  --Bg-Secondary: #9f7263;
+  --Bg-Tertiary: #b5705c;
+  --Bg-Cuaternary: #7f4936;
 
   /*--Primary: grey;
   --Primary-Hover: rgb(60, 60, 60);
   --Primary-Active: black;*/
 
   --FontColor-Primary: black;
-  --FontColor-Hover: grey;
-  --FontColor-Active: white;
+  --FontColor-header-footer: white;
   --FontColor-Title: white;
 }
 
