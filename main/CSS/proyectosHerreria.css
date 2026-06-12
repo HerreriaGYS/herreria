@@ -1,46 +1,64 @@
 #proyectos-herreria{
   border: 1px solid #232b45;
   box-shadow: 0 0 15px #226;
+  background-color: var(--Bg-Tertiary);
   gap: 2rem;
 }
 
 #proyectos-herreria .organizador {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
-#proyectos-herreria .organizador .menu{
+#proyectos-herreria .menu{
   padding: 6rem 1rem;
-  background-color: var(--Bg-Tertiary);
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#proyectos-herreria .organizador .menu h2{
+#proyectos-herreria h2{
   font-size: clamp(2rem, 4.5vh, 3rem);
   text-transform: capitalize;
+  text-align: center;
 }
 
 
-#proyectos-herreria .organizador .menu .sub-cabezal ul{
+#proyectos-herreria ul{
   padding: 1rem 2rem;
   list-style: none;
+  margin: 2rem 0;
 }
 
-#proyectos-herreria .organizador .menu .sub-cabezal ul li{
-  margin: 3rem;
+#proyectos-herreria li{
+  margin-bottom: 3rem;
 }
 
-#proyectos-herreria .organizador .menu .sub-cabezal ul li .categoria-activa{
-  width: 10rem;
-  height: 3rem;
-}
 
-#proyectos-herreria .organizador .menu .sub-cabezal ul li .categoria{
+
+#proyectos-herreria .categoria{
   width: 8rem;
   height: 3rem;
 }
 
-#proyectos-herreria .organizador .galeria-proyectos{
-  padding: 20rem 20vw;
+#proyectos-herreria li button{
+  background-color: var(--Button-Primary);
+  border-radius: 20px 0;
+}
+
+#proyectos-herreria .categoria-activa{
+  width: 8rem;
+  height: 3rem;
+  background-color: var(--Buton-Secondary);
+  box-shadow: 0 0 5px #000;
+  text-shadow: 1px 1px 1px gray;
+}
+
+#proyectos-herreria .galeria-proyectos{
+  background-color: #fffb;
+  flex: 1;
   border-left: 3px solid #232b45;
+  border-radius: 40px 0 0 40px;
+  box-shadow: -5px 0 10px #7668;
 }

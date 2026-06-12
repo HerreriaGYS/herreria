@@ -4,9 +4,8 @@ html[data-theme="light"] {
   --Bg-Tertiary: #b5705c;
   --Bg-Cuaternary: #7f4936;
 
-  /*--Primary: grey;
-  --Primary-Hover: rgb(60, 60, 60);
-  --Primary-Active: black;*/
+  --Button-Primary: #c5aaaa;
+  --Buton-Secondary: #e9dbdb;
 
   --FontColor-Primary: black;
   --FontColor-header-footer: white;

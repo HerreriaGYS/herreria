@@ -1,33 +1,52 @@
-footer{
+#contactenos{
   width: 100%;
   padding: 10px 0;
   background-color: var(--Bg-Cuaternary);
   font-size: clamp(1rem, 2vw, 1.5rem); 
   box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
   display: flex;
-  align-items: center;   /*centra verticalmente*/
   flex-direction: column;
   z-index: 1000;
   color: var(--FontColor-header-footer);
+  gap: 2rem;
 }
-footer .foot{
+
+#contactenos .informacion-contacto{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0 1rem;
+  margin-left: 2rem;
+}
+
+#contactenos .informacion-contacto h2{
+  font-size: clamp(1rem, 3vh, 2rem);
+  margin-bottom: -0.8rem;
+}
+
+#contactenos .informacion-contacto a{
+  text-decoration: none;
+  color: var(--FontColor-header-footer);
+  margin-left: 12.3rem;
+  margin-top: 1rem;
+}
+
+
+#contactenos .foot{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-footer .foot img{
+
+#contactenos .foot img{
   height: 3.5rem;
   width: 3.5rem;
   display: block;
   border-left: 2px;
   margin-left: 2rem;
 }
-footer .foot p{
+
+#contactenos .foot p{
   display: flex;
-  justify-content: center;
+  justify-content: center;/*centra verticalmente*/
   padding: 0 2vw;
-}
-footer .informacion-contacto{
-  display: flex;
-  flex-direction: column;
 }
