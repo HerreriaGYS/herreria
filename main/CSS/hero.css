@@ -1,24 +1,21 @@
 .hero{
-  min-height: 100vh;
-  background-image:
-    linear-gradient(
-        rgba(0,0,0,.5),
-        rgba(0,0,0,.5)
-    ),
-      url("../../imgFolder/hero.webp"); /*coloca una imagen en el fondo (no requiere alt)*/
-  background-size: contain; /*escala una imagen para que cubra todo su contenedor*/
-  background-position: center; /*centra el fondo*/
-  background-repeat: no-repeat;
-  min-height: calc(100vh - 60px); /*declara altura minima, calc permite operar con distintas unidades*/
-  display: flex;
-  flex-direction: column; /*apila los elmentos uno debajo del otro*/
-  text-align: center; /*centra el texto*/
-  justify-content: center;
-  text-shadow: 0 0 4px rgba(200,200,200,0.5); /*pixeles (px) son una unidad fija*/
+  min-height: calc(100vh - 60px);
+  display: flex; /*apila los elmentos uno debajo del otro*/
+  background-color: var();
+  text-align: center;
   box-shadow: 0 0 15px #226;
   color: var(--FontColor-Title);
+  background-color: var(--Bg-Cuaternary);
 }
 
+.hero .text{
+  min-height: 100vh; 
+  padding: 0 10rem;
+  border-right: 3px solid black;
+  align-content: center;
+  background: linear-gradient(140deg,rgba(168, 81, 23, 0.801),rgba(170, 112, 151, 0.418));
+  text-shadow: 1px 0 10px rgba(0, 0, 0, 1);
+}
 .hero h1{
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 10vh;
@@ -31,6 +28,7 @@
 }
 
 .hero .boton-presupuesto{
+  text-shadow: none;
   display: inline-block; /*conserva las capacidades estrucutrales de un bloque pero permite que los elemntos se comporten como un elemento en linea*/
   width: fit-content; /*el ancho se ajusta al contenido*/
   padding: 0 1rem;
@@ -49,4 +47,16 @@
 .boton-presupuesto:hover {
   transform: scale(1.05); /*escala el elemento*/
   box-shadow: 0 0 20px #559;
+}
+
+.hero-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.76);
+}
+
+.hero-img img{
+  max-width: 100%;
+  max-height: 100vh;
 }
