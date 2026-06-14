@@ -1,10 +1,10 @@
 #proyectos-herreria{
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #232b45;
-  box-shadow: 0 0 15px #226;
+  border: 3px solid black;
   background-color: var(--Bg-Tertiary);
   gap: 2rem;
+  background: linear-gradient(125deg, rgba(197, 84, 84, 0.550), rgba(99, 22, 73, 0.3), rgba(197, 84, 84, 0.550));
 }
 
 #proyectos-herreria .menu{
@@ -18,6 +18,7 @@
 
 #proyectos-herreria h2{
   font-size: clamp(2rem, 4.5vh, 3rem);
+  text-shadow: 0 0 3px black;
   text-transform: capitalize;
   text-align: center;
 }
@@ -38,9 +39,10 @@
   height: 3rem;
 }
 
-#proyectos-herreria li button{
+#proyectos-herreria button{
   background-color: var(--Button-Primary);
   border-radius: 20px 0;
+  transition: all .6s ease; 
 }
 
 #proyectos-herreria .categoria-activa{
@@ -49,6 +51,11 @@
   background-color: var(--Buton-Secondary);
   box-shadow: 0 0 5px #000;
   text-shadow: 1px 1px 1px gray;
+}
+
+#proyectos-herreria button:hover {
+  transform: scale(1.15); /*escala el elemento*/
+  box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 #proyectos-herreria .galeria-proyectos{

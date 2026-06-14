@@ -2,8 +2,7 @@
   display: flex; /*apila los elmentos uno debajo del otro*/
   background-color: var();
   text-align: center;
-  border-bottom:  4px solid black;
-  box-shadow: 0 0 15px rgb(66, 18, 18);
+  border-bottom:  3px solid black;
   color: var(--FontColor-Title);
   background-color: var(--Bg-Cuaternary);
 }
