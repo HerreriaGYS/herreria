@@ -354,3 +354,7 @@ NOTAS PARA MAÑANA
 8. Revisar accesibilidad.
 9. Ejecutar Lighthouse y corregir cualquier problema detectado.
 10. Contactar nuevamente al cliente si han pasado varios días sin respuesta.
+
+
+Dia 8
+horas trabajadas 1.5h
