@@ -3,7 +3,8 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  border: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
   padding: 6rem 1rem;
   background-color: var(--Bg-Main);
   gap: 2rem; /*define la separacion entre los elementos hijos de un contenedor*/

@@ -1,7 +1,8 @@
 #proyectos-herreria{
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
   background-color: var(--Bg-Tertiary);
   gap: 2rem;
   background: linear-gradient(125deg, rgba(197, 84, 84, 0.550), rgba(99, 22, 73, 0.3), rgba(197, 84, 84, 0.550));
@@ -37,12 +38,12 @@
 #proyectos-herreria .categoria{
   width: 8rem;
   height: 3rem;
+  transition: all .2s ease;
 }
 
-#proyectos-herreria button{
+#proyectos-herreria .categoria{
   background-color: var(--Button-Primary);
-  border-radius: 20px 0;
-  transition: all .6s ease; 
+  border-radius: 20px 0; 
 }
 
 #proyectos-herreria .categoria-activa{
@@ -55,8 +56,17 @@
 
 #proyectos-herreria button:hover {
   transform: scale(1.15); /*escala el elemento*/
-  box-shadow: 0 0 15px rgb(0, 0, 0);
+  box-shadow: 0 0 10px black;
+  border: 1px solid black;
+  font-weight: bold;
 }
+
+#proyectos-herreria button:active {
+  transform: scale(1.15); /*escala el elemento*/
+  box-shadow: inset 0 0 15px black;
+  border: 3px solid black;
+}
+
 
 #proyectos-herreria .galeria-proyectos{
   background: radial-gradient(#fffa, #ffb7);
@@ -74,7 +84,43 @@
   padding: 2rem;
 }
 .galeria-proyectos div{
-  
   border-radius: 20px;
   box-shadow: 0 0 10px black;
+  transition: all .3s ease; 
+}
+.galeria-proyectos div:hover{
+  transform: scale(1.05); /*escala el elemento*/
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  border: 1px solid black;
+}
+
+.img1{
+  background-image: url("../../imgFolder/Galeria/decoraciones/decoracion3.webp");
+  background-size: cover;
+  background-position: center;
+}
+.img2{
+  background-image: url("../../imgFolder/Galeria/escaleras/escalera1.webp");
+  background-size: cover;
+  background-position: center;
+}
+.img3{
+  background-image: url("../../imgFolder/Galeria/mobiliarios/mobiliario2.webp");
+  background-size: cover;
+  background-position: center;
+}
+.img4{
+  background-image: url("../../imgFolder/Galeria/puertasYportones/porton2.webp");
+  background-size: cover;
+  background-position: center;
+}
+.img5{
+  background-image: url("../../imgFolder/Galeria/techos/techo1.webp");
+  background-size: cover;
+  background-position: center;
+}
+.img6{
+  background-image: url("../../imgFolder/Galeria/ventanas/ventana1.webp");
+  background-size: cover;
+  background-position: center;
 }
