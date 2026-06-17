@@ -21,13 +21,9 @@ let isActive = false; // Variable para mantener el estado activo/inactivo
 menu.addEventListener("click", function () {
   // Alterna entre las clases "transition-close" y ninguna para cambiar la animación después del primer clic
   if (isActive) {
-    menuOculto.classList.remove("bajar");
-    menuOculto.classList.add("subir");
     menuOculto.classList.remove("Mostrar");
     this.classList.remove("transition-close");
   } else {
-    menuOculto.classList.add("bajar");
-    menuOculto.classList.remove("subir");
     menuOculto.classList.add("Mostrar"); 
     this.classList.add("transition-close");
   }
