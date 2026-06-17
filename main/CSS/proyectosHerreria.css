@@ -36,19 +36,14 @@
 }
 
 #proyectos-herreria .categoria{
+  background-color: var(--Button-Primary);
+  border-radius: 20px 0; 
   width: 8rem;
   height: 3rem;
   transition: all .2s ease;
 }
 
-#proyectos-herreria .categoria{
-  background-color: var(--Button-Primary);
-  border-radius: 20px 0; 
-}
-
 #proyectos-herreria .categoria-activa{
-  width: 8rem;
-  height: 3rem;
   background-color: var(--Buton-Secondary);
   box-shadow: 0 0 5px #000;
   text-shadow: 1px 1px 1px gray;
@@ -72,7 +67,7 @@
   background: radial-gradient(#fffa, #ffb7);
   margin: 3rem 0;
   flex: 1;
-  border: 3px solid #232b45;
+  border: 3px solid #3b0d0dde;
   border-right: none;
   border-radius: 40px 0 0 40px;
   box-shadow: -5px 0 10px #7668;
@@ -123,4 +118,56 @@
   background-image: url("../../imgFolder/Galeria/ventanas/ventana1.webp");
   background-size: cover;
   background-position: center;
+}
+
+@media(max-width:1023px){
+  #proyectos-herreria{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 0;
+    background: linear-gradient(125deg, rgba(200, 84, 84, 0.2), rgba(110, 110, 73, 0.1));
+  }
+  #proyectos-herreria .menu{
+    padding: 0;
+    margin-bottom: 0;
+    flex: 0;
+  }
+  #proyectos-herreria ul{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+  }
+  #proyectos-herreria li{
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  #proyectos-herreria .categoria{
+    border-radius: 10px; 
+    width: 7rem;
+    height: 3rem;
+  }
+  #proyectos-herreria .categoria-activa{ 
+    width: 7rem;
+    height: 3rem;
+  }
+  #proyectos-herreria button:hover {
+    transform: none;
+  }
+  #proyectos-herreria button:active {
+    transform: none; 
+  }
+
+  #proyectos-herreria .galeria-proyectos{
+    margin: 2rem 1rem;
+    margin-top: 0;
+    border: 3px solid #3b0d0dde;
+    border-radius: 40px;
+    box-shadow: -5px 0 10px #7668;
+    gap: 1rem;
+    padding: 1rem;
+  }
 }

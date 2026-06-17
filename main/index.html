@@ -2,232 +2,240 @@
 <!DOCTYPE html>
 <!--declara el lenguaje en el que esta hecha la pagina-->
 <html lang="es" data-theme="light">
-<!--"cerebro" de la pagina-->
-<head>
-  <!--los meta datos explican a los navegadores distinta informacion de la pagina-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="fabricacion e instalacion de portones techos escaleras y otras estructuras metalicas">
-  <!--titulo mostrado por google-->
-  <title>G&S |  Herrería y Hogares y Empresas</title>
-  <!--vinculos tanto para los iconos como para los archivos que ayudan a organizar la pagina-->
-  <link rel="icon" href="../imgFolder/marca/favicon.ico">
 
-  <link rel="stylesheet" href="CSS/menuHamburguesa.css">
-  <link rel="stylesheet" href="CSS/otrosServicios.css">
-  <link rel="stylesheet" href="CSS/transicion.css">
-  <link rel="stylesheet" href="CSS/root.css" />
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/header.css">
-  <link rel="stylesheet" href="CSS/hero.css">
-  <link rel="stylesheet" href="CSS/sobreNosotros.css">
-  <link rel="stylesheet" href="CSS/proyectosHerreria.css">
-  <link rel="stylesheet" href="CSS/footer.css">
-  <link rel="stylesheet" href="CSS/lightbox.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!--"cerebro" de la pagina-->
+  <head>
+    <!--los meta datos explican a los navegadores distinta informacion de la pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fabricacion e instalacion de portones techos escaleras y otras estructuras metalicas">
+    <!--titulo mostrado por google-->
+    <title>G&S |  Herrería y Hogares y Empresas</title>
+    <!--vinculos tanto para los iconos como para los archivos que ayudan a organizar la pagina-->
+    <link rel="icon" href="../imgFolder/marca/favicon.ico">
   
-  <!--script llama a un archivo js, defer lo ejecuta desde el segundo 1-->
-  <script src="JS/galeria.js" defer></script>
-  <script src="JS/lightbox.js" defer></script>
-  <script src="JS/menuHamburguesa.js" defer></script>
-</head> <!--los "/..." indican que finalizo un declaracion -->
-<!--"cuerpo" de la pagina-->
-<body>
-  <!--cabeza de pagina-->
-  <header>
-    <!--"nav" indica zonas para navegar en la pagina-->
-    <nav>
-      <!--"img" nos permite agregar un archivo de tipo imagen "src" indica su direccion y "alt" es un texto alternativo en caso de que no se cargue la imagen-->
-    <img src="../imgFolder/marca/G&S logo blanco.png" alt="logo de la empresa">
-      <ul class="navegador">
-      <!--"a" indica un hipervinculo de algun tipo y "href indica su direccion"-->
-        <li><a href="#inicio">inicio</a></li>
-        <li><a href="#sobre-nosotros">sobre nosotros</a></li>
-        <li><a href="#proyectos-herreria">proyectos herreria</a></li>
-        <li><a href="#otros-servicios">otros servicios</a></li>
-        <li><a href="#contactenos">contactenos</a></li>
-      </ul>
-      <div id="icon_menu_border"></div>
-    </nav>
-    <nav class="menuOculto">
-      <ul>
-        <li><a href="#inicio">inicio</a></li>
-        <li><a href="#sobre-nosotros">sobre nosotros</a></li>
-        <li><a href="#proyectos-herreria">proyectos herreria</a></li>
-        <li><a href="#otros-servicios">otros servicios</a></li>
-        <li><a href="#contactenos">contactenos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!--parte principal de la pagina-->
-  <main>
-    <!--tanto section como div ayudan a organizar la pagina (pero tienen distinto valor semantico) "id" y "class" ayudan a identificar etiquetas (o grupos de etiquetas)-->
-    <section id="inicio" class="hero">
-      <!--"hero" es un contenedor que se utiliza para mostrar el contenido mas importante de la pagina-->
-      <div class="text">
-        <!--"h1" se utiliza UNA sola vez por pagina y es el titulo principal-->
-        <h1>HERRERIA G&S</h1>
-        <!--titulo de tipo 2, se puede usar multiples veces, sirve para organizar el contenido-->
-        <h2>Herrería y soluciones para el hogar</h2>
-        <a class="boton-presupuesto" href="#contactenos">
-            Pedir presupuesto
+    <link rel="stylesheet" href="CSS/menuHamburguesa.css">
+    <link rel="stylesheet" href="CSS/otrosServicios.css">
+    <link rel="stylesheet" href="CSS/transicion.css">
+    <link rel="stylesheet" href="CSS/root.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/hero.css">
+    <link rel="stylesheet" href="CSS/sobreNosotros.css">
+    <link rel="stylesheet" href="CSS/proyectosHerreria.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/lightbox.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!--script llama a un archivo js, defer lo ejecuta desde el segundo 1-->
+    <script src="JS/galeria.js" defer></script>
+    <script src="JS/lightbox.js" defer></script>
+    <script src="JS/menuHamburguesa.js" defer></script>
+  </head> <!--los "/..." indican que finalizo un declaracion -->
+  
+  <!--"cuerpo" de la pagina-->
+  <body>
+    <!--cabeza de pagina-->
+    <header>
+      <!--"nav" indica zonas para navegar en la pagina-->
+      <nav>
+        <!--"img" nos permite agregar un archivo de tipo imagen "src" indica su direccion y "alt" es un texto alternativo en caso de que no se cargue la imagen-->
+      <img src="../imgFolder/marca/G&S logo blanco.png" alt="logo de la empresa">
+        <ul class="navegador">
+        <!--"a" indica un hipervinculo de algun tipo y "href indica su direccion"-->
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#sobre-nosotros">sobre nosotros</a></li>
+          <li><a href="#proyectos-herreria">proyectos herreria</a></li>
+          <li><a href="#otros-servicios">otros servicios</a></li>
+          <li><a href="#contactenos">contactenos</a></li>
+        </ul>
+        <div id="icon_menu_border"></div>
+      </nav>
+      <nav class="menuOculto">
+        <ul>
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#sobre-nosotros">sobre nosotros</a></li>
+          <li><a href="#proyectos-herreria">proyectos herreria</a></li>
+          <li><a href="#otros-servicios">otros servicios</a></li>
+          <li><a href="#contactenos">contactenos</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!--parte principal de la pagina-->
+    <main>
+      <!--tanto section como div ayudan a organizar la pagina (pero tienen distinto valor semantico) "id" y "class" ayudan a identificar etiquetas (o grupos de etiquetas)-->
+      <section id="inicio" class="hero">
+        <!--"hero" es un contenedor que se utiliza para mostrar el contenido mas importante de la pagina-->
+        <div class="text">
+          <!--"h1" se utiliza UNA sola vez por pagina y es el titulo principal-->
+          <h1>HERRERIA G&S</h1>
+          <!--titulo de tipo 2, se puede usar multiples veces, sirve para organizar el contenido-->
+          <h2>Herrería y soluciones para el hogar</h2>
+          <a class="boton-presupuesto" href="#contactenos">
+              Pedir presupuesto
+          </a>
+        </div>
+        <div class="hero-img">
+          <!--img declara una imagen-->
+          <img src="../imgFolder/hero.webp" alt="img hero" fetchpriority="high">
+        </div>
+      </section>
+      <div class="transicion transicion1"> 
+        <div></div> <!--aplica una ligera gradiente sobre la imagen-->
+      </div> <!--estas trancisiones contienen imagenes sirven como separadores entre seccion y seccion)-->
+      <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <div class="foto-perfil">
+          <img src="../imgFolder/green-background.png" alt="foto perfil">
+        </div>
+        <div class="contenido-sobre-nosotros">
+          <!--"p" indica un parrafo-->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
+        </div>
+      </section>
+      <div class="transicion transicion2">
+        <div></div> <!--aplica una ligera gradiente sobre la imagen-->
+      </div>
+      <section id="proyectos-herreria">
+        <div class="menu">
+          <div>
+            <h2>Proyectos herrería</h2>
+          </div>
+          <!--la clase subCabezal son multiples botones que permiten mostrar las galerias de imagenes segun la categoria-->
+          <div class="sub-cabezal">
+            <!--"ul" declara una lista que no sigue ningun orden especifico (1,2,3,...)-->
+            <ul>
+              <!--"li" declara que el elemento pertenece a una lista-->
+              <li>
+                <!--"categoria-activa" es la categoria que se muestra (gracias a JavaScript)
+                data-categoria indica el contenido de la misma-->
+                <button class="categoria categoria-activa" data-categoria="todos">
+                  TODOS
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="escaleras">
+                  ESCALERAS
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="puertasYportones">
+                  PUERTAS Y PORTONES
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="techos">
+                  TECHOS
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="decoraciones">
+                  DECORACIONES
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="mobiliarios">
+                  MOBILIARIO
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="galeria-proyectos">
+            <div class="imagen img1"></div>
+            <div class="imagen img2"></div>
+            <div class="imagen img3"></div>
+            <div class="imagen img4"></div>
+            <div class="imagen img5"></div>
+            <div class="imagen img6"></div>
+        </div>
+      </section>
+      <div class="transicion transicion3">
+        <div></div> <!--aplica una ligera gradiente sobre la imagen-->
+      </div>
+      <section id="otros-servicios">
+        <div class="presentacion">
+          <h2>Otros servicios</h2>
+          <h3>Pequeñas reparaciones y soluciones para el hogar</h3>
+          <p>¿Tareas pendientes en el hogar?
+            ¿Reparaciones menores?
+            En G&S estamos encantados de asistir en todas estas necesidasdes que no justifican contratar alguien especializado
+          </p>
+        </div>
+        <div class="servicios">
+          <div>
+            <h4>Cambio de focos</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios1.webp" alt="servicio de cambio defocos">
+          </div>
+          <div>
+            <h4>Reparacion de enchufes</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios2.webp" alt="servicio de reparacion de enchufes">
+          </div>
+          <div>
+            <h4>Cambio de cerraduras</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios3.webp" alt="servicio de cambio de cerraduras">
+          </div>
+          <div>
+            <h4>Colocacion de cortinas</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios4.webp" alt="servicio de colocacion de cortinas">
+          </div>
+          <div>
+            <h4>Colgado de cuadros</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios5.webp" alt="servicio de colgado de cuadros">
+          </div>
+          <div>
+            <h4>Armado de muebles</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios6.webp" alt="servicio de armado de muebles">
+          </div>
+          <div>
+            <h4>Reparacion de perdidas menores</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios7.webp" alt="servicio de reparacion de perdidas de agua menores" class="esp">
+          </div>
+          <div>
+            <h4>Ajustes y matenimiento general</h4>
+            <img src="../imgFolder/otrosServicios/otrosServicios8.webp" alt="imagen general de otros servicios" class="esp">
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <!--pie de pagina-->
+    <footer id="contactenos">
+      <div class="informacion-contacto">
+        <h2><Colgroup></Colgroup>Contactenos:</h2>
+        <a class="mail" href="mailto:Contacto.GyS.2026@gmail.com?subject=Consulta%20desde%20la%20web">
+          <i class="fa-solid fa-envelope"></i>
+          contacto.gys.2026@gmail.com 
+        </a>
+        <a class="cont" href="https://wa.me/59894595462?text=Hola,%20vi%20su%20sitio%20web%20y%20me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer"> 
+          <i class="fa-brands fa-whatsapp"></i>
+          094 595 462 
+        </a>
+        <a class="cont" href="https://wa.me/59897436022?text=Hola,%20vi%20su%20sitio%20web%20y%20me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer"> 
+          <i class="fa-brands fa-whatsapp"></i>
+          097 436 022
+        </a>
+        <a class="ig" href="https://www.instagram.com/gabisol_2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> 
+          <i class="fa-brands fa-instagram"></i>
+          HerreriaG&S
+        </a>
+        <a class="f" href="#"> 
+          <i class="fa-brands fa-facebook"></i>
+          jhonDoeF 
         </a>
       </div>
-      <div class="hero-img">
-        <!--img declara una imagen-->
-        <img src="../imgFolder/hero.webp" alt="img hero" fetchpriority="high">
+      <div class="foot">
+        <img src="../imgFolder/marca/G&S tipo blanco.png" alt="isotipo de la empresa">
+        <p>© Herrería C&S</p>
+        <p>Montevideo, Uruguay</p>
       </div>
-    </section>
-    <div class="transicion transicion1"> 
-      <div></div> <!--aplica una ligera gradiente sobre la imagen-->
-    </div> <!--estas trancisiones contienen imagenes sirven como separadores entre seccion y seccion)-->
-    <section id="sobre-nosotros">
-      <h2>Sobre Nosotros</h2>
-      <div class="foto-perfil">
-        <img src="../imgFolder/green-background.png" alt="foto perfil">
-      </div>
-      <div class="contenido-sobre-nosotros">
-        <!--"p" indica un parrafo-->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
-      </div>
-    </section>
-    <div class="transicion transicion2">
-      <div></div> <!--aplica una ligera gradiente sobre la imagen-->
+    </footer>
+  
+    <!--este div es para presentar la imagen a tamaño completo sobre un fondo de sombra-->
+    <div id="lightbox">
+      <img id="lightboxImg" src="" alt="">
     </div>
-    <section id="proyectos-herreria">
-      <div class="menu">
-        <div>
-          <h2>Proyectos herrería</h2>
-        </div>
-        <!--la clase subCabezal son multiples botones que permiten mostrar las galerias de imagenes segun la categoria-->
-        <div class="sub-cabezal">
-          <!--"ul" declara una lista que no sigue ningun orden especifico (1,2,3,...)-->
-          <ul>
-            <!--"li" declara que el elemento pertenece a una lista-->
-            <li>
-              <!--"categoria-activa" es la categoria que se muestra (gracias a JavaScript)
-              data-categoria indica el contenido de la misma-->
-              <button class="categoria categoria-activa" data-categoria="todos">
-                TODOS
-              </button>
-            </li>
-            <li>
-              <button class="categoria" data-categoria="escaleras">
-                ESCALERAS
-              </button>
-            </li>
-            <li>
-              <button class="categoria" data-categoria="puertasYportones">
-                PUERTAS Y PORTONES
-              </button>
-            </li>
-            <li>
-              <button class="categoria" data-categoria="techos">
-                TECHOS
-              </button>
-            </li>
-            <li>
-              <button class="categoria" data-categoria="decoraciones">
-                DECORACIONES
-              </button>
-            </li>
-            <li>
-              <button class="categoria" data-categoria="mobiliarios">
-                MOBILIARIO
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="galeria-proyectos">
-          <div class="imagen img1"></div>
-          <div class="imagen img2"></div>
-          <div class="imagen img3"></div>
-          <div class="imagen img4"></div>
-          <div class="imagen img5"></div>
-          <div class="imagen img6"></div>
-      </div>
-    </section>
-    <div class="transicion transicion3">
-      <div></div> <!--aplica una ligera gradiente sobre la imagen-->
-    </div>
-    <section id="otros-servicios">
-      <div class="presentacion">
-        <h2>Otros servicios</h2>
-        <h3>Pequeñas reparaciones y soluciones para el hogar</h3>
-        <p>¿Tareas pendientes en el hogar?
-          ¿Reparaciones menores?
-          En G&S estamos encantados de asistir en todas estas necesidasdes que no justifican contratar alguien especializado
-        </p>
-      </div>
-      <div class="servicios">
-        <div>
-          <h4>Cambio de focos</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios1.webp" alt="servicio de cambio defocos">
-        </div>
-        <div>
-          <h4>Reparacion de enchufes</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios2.webp" alt="servicio de reparacion de enchufes">
-        </div>
-        <div>
-          <h4>Cambio de cerraduras</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios3.webp" alt="servicio de cambio de cerraduras">
-        </div>
-        <div>
-          <h4>Colocacion de cortinas</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios4.webp" alt="servicio de colocacion de cortinas">
-        </div>
-        <div>
-          <h4>Colgado de cuadros</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios5.webp" alt="servicio de colgado de cuadros">
-        </div>
-        <div>
-          <h4>Armado de muebles</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios6.webp" alt="servicio de armado de muebles">
-        </div>
-        <div>
-          <h4>Reparacion de perdidas menores</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios7.webp" alt="servicio de reparacion de perdidas de agua menores" class="esp">
-        </div>
-        <div>
-          <h4>Ajustes y matenimiento general</h4>
-          <img src="../imgFolder/otrosServicios/otrosServicios8.webp" alt="imagen general de otros servicios" class="esp">
-        </div>
-      </div>
-    </section>
-  </main>
-  <!--pie de pagina-->
-  <footer id="contactenos">
-    <div class="informacion-contacto">
-      <h2><Colgroup></Colgroup>Contactenos:</h2>
-      <a class="mail" href="mailto:Contacto.GyS.2026@gmail.com?subject=Consulta%20desde%20la%20web">
-        <i class="fa-solid fa-envelope"></i>
-        contacto.gys.2026@gmail.com 
-      </a>
-      <a class="cont" href="https://wa.me/59894595462?text=Hola,%20vi%20su%20sitio%20web%20y%20me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer"> 
-        <i class="fa-brands fa-whatsapp"></i>
-        094 595 462 
-      </a>
-      <a class="ig" href="https://www.instagram.com/gabisol_2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> 
-        <i class="fa-brands fa-instagram"></i>
-        HerreriaG&S
-      </a>
-      <a class="f" href="#"> 
-        <i class="fa-brands fa-facebook"></i>
-        jhonDoeF 
-      </a>
-    </div>
-    <div class="foot">
-      <img src="../imgFolder/marca/G&S tipo blanco.png" alt="isotipo de la empresa">
-      <p>© Herrería C&S</p>
-      <p>Montevideo, Uruguay</p>
-    </div>
-  </footer>
-
-  <!--este div es para presentar la imagen a tamaño completo sobre un fondo de sombra-->
-  <div id="lightbox">
-    <img id="lightboxImg" src="" alt="">
-  </div>
-</body>
+  </body>
 </html>
