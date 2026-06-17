@@ -1,0 +1,25 @@
+#lightbox{
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.8);
+
+    z-index: 9999;
+}
+
+#lightboxImg{
+    max-width: 90%;
+    max-height: 90%;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px black;
+}
+
+#lightbox.activo{
+    display: flex;
+}

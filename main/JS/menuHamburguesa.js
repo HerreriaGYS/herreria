@@ -16,16 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
 // JavaScript para cambiar la clase al hacer clic en el icono de hamburguesa
 const menu = document.querySelector("#icon_menu_border"); // Cambiado a #icon_menu_border
 const menuOculto = document.querySelector(".menuOculto");
-let isActive = false; // Variable para mantener el estado activo/inactivo
+let activo = false; // Variable para mantener el estado activo/inactivo
 
 menu.addEventListener("click", function () {
   // Alterna entre las clases "transition-close" y ninguna para cambiar la animación después del primer clic
-  if (isActive) {
+  if (activo) {
     menuOculto.classList.remove("Mostrar");
     this.classList.remove("transition-close");
   } else {
     menuOculto.classList.add("Mostrar"); 
     this.classList.add("transition-close");
   }
-  isActive = !isActive; // Cambia el estado activo/inactivo
+  activo = !activo; // Cambia el estado activo/inactivo
 });

@@ -25,3 +25,9 @@
 
   background: radial-gradient(#b554, #5394);
 }
+
+@media(max-width:1024px){
+  .transicion{
+    height: 20rem;
+  }
+}

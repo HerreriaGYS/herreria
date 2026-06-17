@@ -15,3 +15,9 @@ section{
   scroll-margin-top: 75px;
   min-height: calc(100vh - 60px);
 }
+
+@media(max-width:1023px){
+  section{
+    scroll-margin-top: 19rem;
+  }
+}

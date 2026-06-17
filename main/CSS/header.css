@@ -34,6 +34,7 @@ header nav a:hover{ /*:hover activa una animacion al pasar el mouse por encima d
   color: #ffffff;
   text-shadow: 0 0 2px #dddddd; /*sombra de texto*/
 }
+
 .menuOculto{
   display: none;
   margin-top: 10px;
@@ -57,4 +58,3 @@ header nav a:hover{ /*:hover activa una animacion al pasar el mouse por encima d
     display:none;
   }
 }
-
