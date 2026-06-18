@@ -12,7 +12,7 @@ const imagenes = {
     "../../imgFolder/Galeria/decoraciones/decoracion1.webp",
     "../../imgFolder/Galeria/decoraciones/decoracion2.webp",
     "../../imgFolder/Galeria/decoraciones/decoracion3.webp",
-    "#",
+    "../../imgFolder/Galeria/decoraciones/decoracion4.webp",
     "#",
     "#"
   ],
@@ -28,9 +28,9 @@ const imagenes = {
     "../../imgFolder/Galeria/mobiliarios/mobiliario1.webp",
     "../../imgFolder/Galeria/mobiliarios/mobiliario2.webp",
     "../../imgFolder/Galeria/mobiliarios/mobiliario3.webp",
-    "#",
-    "#",
-    "#"
+    "../../imgFolder/Galeria/mobiliarios/mobiliario4.webp",
+    "../../imgFolder/Galeria/mobiliarios/mobiliario5.webp",
+    "../../imgFolder/Galeria/mobiliarios/mobiliario6.webp"
   ],
   puertasYportones: [
     "../../imgFolder/Galeria/puertasYportones/porton1.webp",
@@ -43,8 +43,8 @@ const imagenes = {
   techos: [
     "../../imgFolder/Galeria/techos/techo1.webp",
     "../../imgFolder/Galeria/techos/techo2.webp",
-    "#",
-    "#",
+    "../../imgFolder/Galeria/techos/techo3.webp",
+    "../../imgFolder/Galeria/techos/techo4.webp",
     "#",
     "#"
   ],
