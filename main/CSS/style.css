@@ -15,7 +15,6 @@ section{
 
 .hero{
   display: flex; /*apila los elmentos uno debajo del otro*/
-  background-color: var();
   text-align: center;
   border-bottom:  3px solid black;
   color: var(--FontColor-Primary);
