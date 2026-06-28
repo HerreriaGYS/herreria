@@ -19,8 +19,8 @@ const imagenes = {
   escaleras: [
     "https://emidm28052004-droid.github.io/herreria/imgFolder/Galeria/escaleras/escalera1.webp",
     "https://emidm28052004-droid.github.io/herreria/imgFolder/Galeria/escaleras/escalera2.webp",
-    "#",
-    "#",
+    "https://emidm28052004-droid.github.io/herreria/imgFolder/Galeria/escaleras/escalera3.webp",
+    "https://emidm28052004-droid.github.io/herreria/imgFolder/Galeria/escaleras/escalera4.webp",
     "#",
     "#"
   ],
