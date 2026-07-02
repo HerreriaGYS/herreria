@@ -1,16 +1,16 @@
 header{
-  position: sticky; /*fija la posicion de un objeto en un lugar especifico*/
-  top: 0; /*declara la pocision anterior*/
-  width: 100%; /*ancho*/
-  padding: 1rem 0; /*la unidad Root EM (rem) es una unidad relativa importante en el responsive design*/
-  background-color: var(--Bg-Cuaternary); /*color de fondo*/
-  z-index: 1000;/*pocisiona elementos en funcion del eje z (que esta delante y que detras)*/
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3); /*aplica sombra a una caja (en este caso el header)*/
+  position: sticky; 
+  top: 0; 
+  width: 100%; 
+  padding: 1rem 0; 
+  background-color: var(--Bg-Cuaternary); 
+  z-index: 1000;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3); 
 }
 header nav{
-  display: flex; /*ordena los elementos dentro de un contenedor*/
-  align-items: center;   /*centra verticalmente*/
-  justify-content: space-between; /*centra horizontalmente*/
+  display: flex; 
+  align-items: center;  
+  justify-content: space-between; 
 }
 header img{
   height: 3.5rem;
@@ -18,23 +18,25 @@ header img{
   display: block;
   margin-left: 2rem;
 }
-.navegador{ /*el selector . seleccion todas las clases con ese nombre*/
-  font-size: clamp(1.5em, 3vh, 2rem); /*font-size define el tamaño del texto y clamp define un valor dinamico*/
-  font-style: oblique; /*cursiva (de word)*/
+.navegador{ 
+  font-size: clamp(1.5em, 3vh, 2rem); 
+  font-style: oblique;
   display: flex;
   align-items: center;
   list-style: none
 }
-header nav a{ /*al seleccionar multiples etiquetas se indica la herencia (en este caso solo se selecciona los a dentro del div en el header)*/
-  margin: 0 2vw; /*viewport widht (vw) es una medida que representa el 1% de la pantalla del navegador*/
-  text-decoration: none; /*elimina decorados en el texto (como el subrayado)*/
-  color: var(--FontColor-Important); /*color de texto*/
+header nav a{ 
+  margin: 0 2vw;
+  text-decoration: none; 
+  color: var(--FontColor-Important); 
 }
-header nav a:hover{ /*:hover activa una animacion al pasar el mouse por encima del elemento*/
+header nav a:hover{ 
   color: #ffffff;
-  text-shadow: 0 0 2px #dddddd; /*sombra de texto*/
+  text-shadow: 0 0 2px #dddddd; 
 }
 
+/*////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*MENU OCULTO*/
 .menuOculto{
   display: none;
   margin-top: 10px;

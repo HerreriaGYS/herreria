@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Busca un elemento con el ID "icon_menu_border"
-  const menu = document.querySelector("#icon_menu_border"); // Cambiado a #icon_menu_border
+  const menu = document.querySelector("#icon_menu_border"); 
   if (menu) {
-    // Verifica si se encontró el elemento
-
-    // Agrega tres elementos "div" con la clase "lines-menu" dentro del elemento encontrado
     for (let i = 0; i < 3; i++) {
       const div = document.createElement("div");
       div.classList.add("lines-menu");
@@ -13,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// JavaScript para cambiar la clase al hacer clic en el icono de hamburguesa
-const menu = document.querySelector("#icon_menu_border"); // Cambiado a #icon_menu_border
+
+const menu = document.querySelector("#icon_menu_border"); 
 const menuOculto = document.querySelector(".menuOculto");
-let activo = false; // Variable para mantener el estado activo/inactivo
+let activo = false; 
 
 menu.addEventListener("click", function () {
-  // Alterna entre las clases "transition-close" y ninguna para cambiar la animación después del primer clic
+  
   if (activo) {
     menuOculto.classList.remove("Mostrar");
     this.classList.remove("transition-close");
@@ -27,5 +23,13 @@ menu.addEventListener("click", function () {
     menuOculto.classList.add("Mostrar"); 
     this.classList.add("transition-close");
   }
-  activo = !activo; // Cambia el estado activo/inactivo
+  activo = !activo;
+});
+menuOculto.addEventListener("click", function () {
+  
+  if (activo) {
+    this.classList.remove("Mostrar");
+    menu.classList.remove("transition-close");
+  }
+  activo = !activo;
 });

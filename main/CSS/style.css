@@ -1,12 +1,12 @@
-* { /*refiere a todo el contenido*/
-  margin: 0; /*declara margenes*/
-  padding: 0; /*espacio de relleno entre el contenido y el borde*/
-  box-sizing: border-box; /*cambia la forma en que los navegadores calculan el ancho y la altura total de un elemento*/
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
 }
-body{ /*"nombre" a secas selecciona todas las declaraciones con esta etiqueta*/
-  background-color: var(--Bg-Main); /*fondo (en este caso una gradiente lineal de colores)*/
-  font-family: 'Times New Roman', Times, serif; /*selecciona el texto-fuente (si una falla se usa la siguiente)*/
-  font-weight: 400; /*tamaño de fuente*/
+  body{ 
+  background-color: var(--Bg-Main); 
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: 400; 
 }
 section{
   scroll-margin-top: 75px;
@@ -17,7 +17,7 @@ section{
 /*/////////////////////////////////////////////////////////////////*/
 /*hero (primera imagen que se ve al abrir la pagina)*/
 .hero{
-  display: flex; /*apila los elmentos uno debajo del otro*/
+  display: flex; 
   text-align: center;
   border-bottom:  3px solid black;
   color: var(--FontColor-Primary);
@@ -42,22 +42,22 @@ section{
 }
 .hero .boton-presupuesto{
   text-shadow: none;
-  display: inline-block; /*conserva las capacidades estrucutrales de un bloque pero permite que los elemntos se comporten como un elemento en linea*/
-  width: fit-content; /*el ancho se ajusta al contenido*/
+  display: inline-block;
+  width: fit-content; 
   padding: 0.2rem 1.5rem;
   margin: 1rem auto;
   text-decoration: none;
   font-size: clamp(1.5rem, 4vh, 2.5rem);
   color: rgb(12, 13, 14);
-  border:  0.3vh solid rgb(87, 11, 11);/*definde el grosor estilo y color del borde*/
-  background: radial-gradient(#d4aa88, rgb(212, 205, 173)); /*gradiente circular*/
+  border:  0.3vh solid rgb(87, 11, 11);
+  background: radial-gradient(#d4aa88, rgb(212, 205, 173)); 
   box-shadow: 0 0 15px rgb(212, 108, 60);
-  border-radius: 20px; /*redondea los angulos del borde*/
-  text-transform:uppercase; /*convierte el texto a mayusculas*/
-  transition: all .3s ease; /*define el tiempo que dura la transicion*/
+  border-radius: 20px; 
+  text-transform:uppercase; 
+  transition: all .3s ease; 
 }
 .boton-presupuesto:hover {
-  transform: scale(1.05); /*escala el elemento*/
+  transform: scale(1.05); 
   box-shadow: 0 0 25px rgb(87, 11, 11);
 }
 .hero-img{
@@ -239,18 +239,14 @@ section{
 }
 #contactenos .foot p{
   display: flex;
-  justify-content: center;/*centra verticalmente*/
+  justify-content: center;
   padding: 0 2vw;
 }
 
 
 /*//////////////////////////////////////////////////////////////*/
 /*media querys*/
-@media(max-width:1024px){
-  section{
-    scroll-margin-top: 19rem;
-  }
-}
+
 
 @media(max-width:1024px){
   .hero-img{
