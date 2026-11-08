@@ -1,0 +1,371 @@
+.servicios-page {
+  color: #17100d;
+  background: var(--Bg-Main, #d2b49a);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+.servicios-page :where(a, button, summary):focus-visible {
+  outline: 3px solid #17100d;
+  outline-offset: 4px;
+}
+
+.servicios-page .sv-skip {
+  position: fixed;
+  top: 0.75rem;
+  left: 1rem;
+  z-index: 2000;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  border: 2px solid #17100d;
+  border-radius: 0.5rem;
+  color: #17100d;
+  background: #fff7ef;
+  transform: translateY(-180%);
+}
+
+.servicios-page .sv-skip:focus {
+  transform: translateY(0);
+}
+
+.servicios-page .sv-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.servicios-page .sv-main section {
+  min-height: auto;
+  scroll-margin-top: 7rem;
+}
+
+.servicios-page .sv-main {
+  scroll-margin-top: 7rem;
+}
+
+.servicios-page .sv-container {
+  /* Los márgenes dejan espacio a los flotantes sin cortar el fondo de cada sección. */
+  width: min(calc(100% - 10rem), 85rem);
+  margin-inline: auto;
+}
+
+.servicios-page .sv-intro {
+  padding-block: clamp(2.75rem, 5vw, 4.5rem);
+  border-bottom: 3px solid #17100d;
+  background: linear-gradient(
+    125deg,
+    rgb(180 82 44 / 35%),
+    var(--Bg-Main, #d2b49a) 48%,
+    rgb(180 44 67 / 30%)
+  );
+}
+
+.servicios-page .sv-intro-inner {
+  max-width: 58rem;
+  text-align: center;
+}
+
+.servicios-page .sv-eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.servicios-page .sv-intro h1 {
+  max-width: 22ch;
+  margin: 0 auto;
+  font-size: clamp(2.4rem, 4.6vw, 4.2rem);
+  line-height: 1.07;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+.servicios-page .sv-lead {
+  max-width: 57ch;
+  margin: 1.5rem auto 0;
+  font-size: clamp(1.2rem, 1.7vw, 1.4rem);
+  line-height: 1.5;
+}
+
+.servicios-page .sv-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.75rem;
+  margin-top: 1.75rem;
+}
+
+.servicios-page .sv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  max-width: 100%;
+  min-height: 52px;
+  padding: 0.85rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+}
+
+.servicios-page .sv-button-primary {
+  border: 2px solid #570b0b;
+  border-radius: 20px;
+  color: #17100d;
+  background: radial-gradient(#d4aa88, #d4cdad);
+  box-shadow: 0 0 15px rgb(87 11 11 / 22%);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.servicios-page .sv-button i {
+  flex-shrink: 0;
+  font-size: 1.35em;
+}
+
+.servicios-page .sv-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding-block: 0.5rem;
+  color: #17100d;
+  font-weight: 700;
+  text-underline-offset: 0.22em;
+}
+
+.servicios-page .sv-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+}
+
+/* Las ocho imágenes reutilizan los archivos ya existentes del sitio. */
+.servicios-page .sv-catalog {
+  padding-block: clamp(2.5rem, 4vw, 4rem);
+  background: linear-gradient(
+    180deg,
+    rgb(159 114 99 / 18%),
+    transparent 20rem
+  );
+}
+
+.servicios-page .sv-section-heading {
+  max-width: 48rem;
+  margin-bottom: 2rem;
+}
+
+.servicios-page .sv-section-heading h2,
+.servicios-page .sv-consultation h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2.7vw, 2.7rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.servicios-page .sv-section-heading > p:last-child,
+.servicios-page .sv-consultation-inner > div > p:last-child {
+  max-width: 64ch;
+  margin: 0.85rem 0 0;
+}
+
+.servicios-page .sv-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.servicios-page .sv-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgb(87 49 33 / 45%);
+  border-radius: 0.85rem;
+  background: linear-gradient(135deg, #e5c9af, #dbc1ad);
+  box-shadow: 0 4px 12px rgb(68 34 23 / 10%);
+}
+
+.servicios-page .sv-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  object-position: center 35%;
+  border-bottom: 1px solid rgb(87 49 33 / 25%);
+}
+
+.servicios-page .sv-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  min-width: 0;
+  padding: 1.3rem;
+}
+
+.servicios-page .sv-card h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 1.5vw, 1.55rem);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.servicios-page .sv-card-content > p {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.servicios-page .sv-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 44px;
+  margin-top: auto;
+  padding-top: 0.4rem;
+  color: #4a2417;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.servicios-page .sv-card-link > i {
+  font-size: 0.85em;
+}
+
+.servicios-page .sv-consultation {
+  padding-block: clamp(2rem, 3.5vw, 3.25rem);
+  border-block: 2px solid rgb(87 49 33 / 35%);
+  background: linear-gradient(
+    115deg,
+    rgb(180 82 44 / 22%),
+    rgb(212 205 173 / 35%),
+    rgb(180 44 67 / 16%)
+  );
+}
+
+.servicios-page .sv-consultation-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.servicios-page .sv-consultation-inner > div {
+  min-width: 0;
+  max-width: 49rem;
+}
+
+.servicios-page .sv-consultation .sv-button {
+  flex-shrink: 0;
+  max-width: 20rem;
+}
+
+
+@media (hover: hover) {
+  .servicios-page .sv-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgb(87 11 11 / 32%);
+  }
+
+  .servicios-page .sv-card-link:hover,
+  .servicios-page .sv-text-link:hover,
+  .servicios-page a:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+@media (max-width: 74rem) {
+  .servicios-page .sv-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .servicios-page .sv-card-image {
+    aspect-ratio: 5 / 3;
+  }
+
+  .servicios-page .sv-consultation-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+
+@media (max-width: 44rem) {
+  .servicios-page .sv-intro {
+    padding-block: 2.5rem;
+  }
+
+  .servicios-page .sv-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .servicios-page .sv-button {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .servicios-page .sv-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .servicios-page .sv-card {
+    display: grid;
+    grid-template-columns: minmax(100px, 28%) minmax(0, 1fr);
+  }
+
+  .servicios-page .sv-card-image {
+    width: 100%;
+    height: 100%;
+    min-height: 190px;
+    aspect-ratio: auto;
+    object-position: center;
+    border-right: 1px solid rgb(87 49 33 / 25%);
+    border-bottom: 0;
+  }
+
+  .servicios-page .sv-card-content {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .servicios-page .sv-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .servicios-page .sv-card-content > p {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .servicios-page .sv-consultation .sv-button {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .servicios-page *,
+  .servicios-page *::before,
+  .servicios-page *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

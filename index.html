@@ -7,6 +7,17 @@
   <head>
     <!--los meta datos explican a los navegadores distinta informacion de la pagina-->
     <meta charset="UTF-8">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CKMG6D8J0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5CKMG6D8J0');
+    </script>
+    
+    <!-- Resto de meta datos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Herrería G&S en Montevideo. Fabricación e instalación de portones, escaleras, techos, estructuras metálicas y soluciones para el hogar y empresas.">
     <meta property="og:title" content="Herrería G&S">
@@ -16,7 +27,7 @@
     <!--titulo mostrado por google-->
     <title>Herrería G&S | Herrería para Hogares y Empresas en Montevideo</title>
     <!--vinculos tanto para los iconos como para los archivos que ayudan a organizar la pagina-->
-    <link rel="icon" href="imgFolder/marca/favicon.ico">
+    <link rel="icon" href="imgFolder/marca/favicon_fondo_negro.ico">
   
     <link rel="stylesheet" href="main/CSS/menuHamburguesa.css">
     <link rel="stylesheet" href="main/CSS/root.css" />
@@ -51,6 +62,7 @@
           <li><a href="#inicio">inicio</a></li>
           <li><a href="#sobre-nosotros">sobre nosotros</a></li>
           <li><a href="#proyectos-herreria">proyectos herrería</a></li>
+          <li><a href="main/HTML/Automatizaciones.html" rel="noopener noreferrer">Automatizaciones </a></li>
           <li><a href="#otros-servicios">otros servicios</a></li>
           <li><a href="#contactenos">contáctenos</a></li>
         </ul>
@@ -61,6 +73,7 @@
           <li><a href="#inicio">inicio</a></li>
           <li><a href="#sobre-nosotros">sobre nosotros</a></li>
           <li><a href="#proyectos-herreria">proyectos herrería</a></li>
+          <li><a href="main/HTML/Automatizaciones.html" rel="noopener noreferrer">Automatizaciones </a></li>
           <li><a href="#otros-servicios">otros servicios</a></li>
           <li><a href="#contactenos">contáctenos</a></li>
         </ul>
@@ -94,7 +107,7 @@
         <div class="contenido-sobre-nosotros">
           <!--"p" indica un parrafo-->
           <p>
-            En Herrería G&S somos una empresa familiar con más de 25 años de trayectoria, dedicada a brindar soluciones en herrería y mejoras para el hogar. <br>
+            En Herrería G&S somos una empresa familiar ubicada en La Teja, Montevideo, con más de 25 años de trayectoria, dedicada a brindar soluciones de herrería y mejoras para el hogar. <br>
 
             Fabricamos e instalamos portones, rejas, escaleras, techos, cerramientos, restauraciones y todo tipo de trabajos en metal. Además, realizamos la instalación y el mantenimiento de motores para portones automáticos, así como tareas de mantenimiento y mejoras generales para el hogar. <br> 
 
@@ -170,49 +183,18 @@
         <div></div> <!--aplica una ligera gradiente sobre la imagen-->
       </div>
       <section id="otros-servicios">
-        <div class="presentacion">
-          <h2>Otros servicios</h2>
-          <h3>Servicios de Mantenimiento y Reparaciones para el Hogar</h3>
-          <p>¿Tareas pendientes en el hogar?
-            ¿Reparaciones menores?
-            En G&S estamos encantados de asistir en todas estas necesidades que no justifican contratar alguien especializado.
-          </p>
-        </div>
-        <div class="servicios">
-          <div>
-            <h4>Cambio de focos</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios1.webp" alt="servicio de cambio defocos" loading="lazy">
-          </div>
-          <div>
-            <h4>Reparación de enchufes</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios2.webp" alt="servicio de reparacion de enchufes" loading="lazy">
-          </div>
-          <div>
-            <h4>Cambio de cerraduras</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios3.webp" alt="servicio de cambio de cerraduras" loading="lazy">
-          </div>
-          <div>
-            <h4>Colocación de cortinas</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios4.webp" alt="servicio de colocacion de cortinas" loading="lazy">
-          </div>
-          <div>
-            <h4>Colgado de cuadros</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios5.webp" alt="servicio de colgado de cuadros" loading="lazy">
-          </div>
-          <div>
-            <h4>Armado de muebles</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios6.webp" alt="servicio de armado de muebles" loading="lazy">
-          </div>
-          <div>
-            <h4>Reparación de perdidas menores</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios7.webp" alt="servicio de reparacion de perdidas de agua menores" class="esp" loading="lazy">
-          </div>
-          <div>
-            <h4>Ajustes y matenimiento general</h4>
-            <img src="imgFolder/otrosServicios/otrosServicios8.webp" alt="imagen general de otros servicios" class="esp" loading="lazy">
-          </div>
-        </div>
-      </section>
+    <h2>Soluciones para el hogar</h2>
+
+    <p>
+        Además de nuestros trabajos de herrería,
+        ofrecemos servicios de mantenimiento,
+        reparaciones y mejoras para el hogar.
+    </p>
+
+    <a href="/main/HTML/OtrosServicios.html" rel="noopener noreferrer">
+        Conocer nuestros servicios
+    </a>
+</section>
     </main>
   
     <!--pie de pagina-->
@@ -223,13 +205,13 @@
           <i class="fa-solid fa-envelope"></i>
           contacto.gys.2026@gmail.com 
         </a>
-        <a class="cont" href="https://wa.me/59897436022?text=Hola,%20vi%20su%20sitio%20web%20y%20me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer"> 
-          <i class="fa-brands fa-whatsapp"></i>
-          097 436 022
-        </a>
         <a class="cont" href="https://wa.me/59894595462?text=Hola,%20vi%20su%20sitio%20web%20y%20me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer"> 
           <i class="fa-brands fa-whatsapp"></i>
           094 595 462 
+        </a>
+        <a class="cont" href="https://wa.me/59897436022?text=Hola,%20vi%20su%20sitio%20web%20y%20me%20gustaría%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer"> 
+          <i class="fa-brands fa-whatsapp"></i>
+          097 436 022
         </a>
         <a class="ig" href="https://www.instagram.com/herreria_gys?igsh=YTA2aXJlN3lncWNt" target="_blank" rel="noopener noreferrer"> 
           <i class="fa-brands fa-instagram"></i>
@@ -247,5 +229,25 @@
     <div id="lightbox">
       <img id="lightboxImg" src="" alt="">
     </div>
+
+    <!--este div es para los botones flotantes-->
+    <div class="floating-socials">
+      <a href="https://www.instagram.com/herreria_gys?igsh=YTA2aXJlN3lncWNt"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-float"
+        aria-label="Instagram de G&S">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://wa.me/59894595462"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-float"
+        aria-label="WhatsApp de G&S">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      </a>
+    </div>
+
   </body>
 </html>
